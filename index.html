@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://tb148.github.io/pic/pp.jpg" sizes="32x32">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <title>TB148 AK :)OI</title>
+    <style>
+        *{
+			color:#191970;
+			transition:all 0.3s ease;
+			text-shadow:0 0 20px #e1ffff;
+		}
+        body
+        {
+            background-color:#66ccff;
+            text-align:center;
+        }
+        header
+        {
+            margin: 2cm 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TonyBrown</h1>
+        <img src="https://tb148.github.io/pic/pp.jpg" alt="TLL是巨佬" style="width: 200px; height: 200px; ">
+        <h2>仅仅早七就AK了N次IOI，且每次AK用时只有5秒的巨佬</h2>
+        <p>He has AKed :)OI <span class="counter">0</span> times.</p>
+        <p>他已经被您膜拜了 <span class="counter">0</span> 次。</p>
+		<button id="mobai" type="button" class="el-button el-button--primary is-plain is-round">点击膜拜</button>
+		<script>
+			  var counter = 0;
+			  document.getElementById("mobai").onclick = function(){
+				    ++counter;
+		  		  for(let item of document.getElementsByClassName("counter")){
+		    		  	item.innerText = counter;
+	    			}
+            if(counter==1){
+                alert("TLL:\"一个好的开始是很重要的\"");
+            }
+		    }
+		</script>
+    </header>
+    <p>
+	</p>
+</body>
